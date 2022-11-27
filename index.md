@@ -28,9 +28,9 @@ For industrial robots, in addition to the mechanical body, control system, and s
 + Cross-platform, compatible for six/seven axis robot, DELTA robot and SCARA robot.
 <img decoding="async" src="assets\pictures\robot-demonstrator-mainpage.png" >  
 + Support text-based robot programming with motion control instructions such as MovJ, MovL etc. Graphic-based programming incoming.
-<img decoding="async" src="assets\pictures\robot-demonstrator-graphic-programming.png" width="60%"> 
+<img decoding="async" src="assets\pictures\robot-demonstrator-graphic-programming.png" width="100%"> 
 + Modern HDI, simple and easy to use.
-<img decoding="async" src="assets\pictures\robot-demonstrator-UI.png" width="65%">  
+<img decoding="async" src="assets\pictures\robot-demonstrator-UI.png" width="100%">  
 
 ## Trajectory Planning Algorithm
 + Multiple points planning with quintic polynomial method for joint space planning.  
