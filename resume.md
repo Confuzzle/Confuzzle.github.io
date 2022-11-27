@@ -1,16 +1,18 @@
 ---
-title: Elements
+title: Personal CV
 feature_text: |
-  A demo of Markdown and HTML includes
+  
 feature_image: "https://picsum.photos/2560/600?image=873"
-excerpt: "A demo of Markdown and HTML includes"
+excerpt: ""
 aside: true
 ---
 
 ### INFOMATION
 ----
-赵沅 （Yuan Zhao）  
-{% include button.html text="Email" link="zy1162864361@hotmail.com" color="#0366d6" %}
+赵沅  
+Yuan Zhao  
+**Email:** zy1162864361@hotmail.com  
+
 ### EDUCATION
 ----
 **Xiamen University**  
