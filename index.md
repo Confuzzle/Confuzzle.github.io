@@ -14,7 +14,7 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 ## Robot Controller
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
-<img decoding="async" src="assets\pictures\Controller-software-architecture.svg" width="75%">  
+<img decoding="async" src="assets\pictures\Controller-software-architecture.svg" width="100%">  
 
 + Compatible for six/seven axis robot, DELTA robot and SCARA robot.
 
