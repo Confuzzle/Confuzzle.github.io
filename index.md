@@ -19,7 +19,8 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 + Compatible for six/seven axis robot, DELTA robot and SCARA robot.
 
 ## Robot Demonstrator
-<video controls height='100%' width='100%' id="webm" src="assets\pictures\robot-demonstrator-video.webm" type="video/webm"></videos>  
+![](assets\pictures\robot-demonstrator-video-1.gif)  
+
 
 For industrial robots, in addition to the mechanical body, control system, and servos, a very important component is the teaching system. Through the teaching system, the operator can view the operation information of the robot and control the robot to move to the designated position by sending operation instructions.  
 
