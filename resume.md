@@ -7,14 +7,13 @@ excerpt: ""
 aside: true
 ---
 
-### INFOMATION
-----
+
 赵沅  
 Yuan Zhao  
 **Email:** zy1162864361@hotmail.com  
 
-### EDUCATION
 ----
+### EDUCATION
 **Xiamen University**  
 *Sep 2016 - Jun 2020*  
 Automation | Bachelor | Aeronautics and Astronautics  
@@ -24,9 +23,10 @@ Automation | Bachelor | Aeronautics and Astronautics
 *Sep 2020 - Jun 2023*  
 Electronic Information Engineering | Master | Electronics and Information Engineering  
 + Master Scholarship (2020,2021)  
-  
+
+
+----    
 ### PROJECT EXPERIENCE
-----  
 **2021RoboCup China**  
 *May 2021 - Jun 2021*  
 + Won the first place in both the *RoboCup@Home* and *RoboCup@OPL* group.  
@@ -49,8 +49,8 @@ Electronic Information Engineering | Master | Electronics and Information Engine
 + Robot teaching and engineering development environment.  
 + Development of universial robot control software platform which aims to support six/seven axis robot, DELTA robot and SCARA robot.  
 
-### WORK EXPERIENCE
 ----
+### WORK EXPERIENCE
 **CRRC Sifang Co., Ltd.**  
 *Jun 2021 - Oct 2021*  
 *Qingdao*  
@@ -63,7 +63,7 @@ Electronic Information Engineering | Master | Electronics and Information Engine
 + Work as software quality assurance(QA) engineer.
 + Using Mario, a testing platform integrated TestNG, Retrofit, Thfit and Pigeon for interface testing.  
 
-### SKILLS & CERTIFICATIONS
 ----
+### SKILLS & CERTIFICATIONS
 **Coding:** Familiar with C++, Java.  
 **Languages:** CET-6 (522), The Japanese-Language Proficiency Test N1(140).
