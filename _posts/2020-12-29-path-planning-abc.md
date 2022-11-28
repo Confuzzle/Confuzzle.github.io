@@ -26,7 +26,8 @@ at_1- a(t-t_2)& \text{t $\in$ [$t_2$, $t_3$]}
 \end{cases}
 $$  
 
-The distance required when the specified joint accelerates to $v_{max}$ from $0$ and then decelerate to $0$ again is $S=\cfrac{v^2_{max}}{a}$ . According to the size of $S$ and the actual distance $d = |d_{start} - d_{end}|$ , there are two cases:  
+The distance required when the specified joint accelerates to $v_{max}$ from $0$ and then decelerate to $0$ again is $S=\cfrac{v_{max}^2}{a}$ .
+According to the size of $S$ and the actual distance $d = |d_{start}-d_{end}|$ , there are two cases:  
 1. $S\gt d$, the joint cannot make to the maximum speed. At this time, the time of the uniform speed motion is 0, and each time point is:  
 $$
 \begin{aligned}
@@ -56,6 +57,75 @@ d_{end}-\cfrac{1}{2}a(t_3-t)^2 & \text{t $\in$ [$t_2$, $t_3$]}
 \end{cases}
 $$  
 
+A point-to-point trapezoidal velocity model trajectory planning is shown in the picture below. From left to right, top to bottom is joint posion curve, joint velocity curve and joint accelerate curve.  
+<img decoding="async" src="..\assets\pictures\trap-joint.svg" width="100%">  
+
 ### Cosine velocity model
 The cosine velocity model is similar to the trapezoidal velocity model in principle, the difference is that this algorithm is based on a smoother sinusoidal model for sequence point interpolation.  
-Since the sinusoidal curve is n-order derivable, the model can realize the smoothness of the velocity, acceleration, and jerk of the trajectory at the same time, effectively overcoming the sudden acceleration problem caused by the trapezoidal velocity planning.
+Since the sinusoidal curve is n-order derivable, the model can realize the smoothness of the velocity, acceleration, and jerk of the trajectory at the same time, effectively overcoming the sudden acceleration problem caused by the trapezoidal velocity planning.  
+Given max velocity $v_{max}$ and the max accelerate $a_{max}$ with target distance $d = |d_{start}-d_{end}|$, the acceleration $a(t)$ can be defined as the following:  
+
+$$
+a(t) =
+\begin{cases}
+A-A\cos\omega t & \text{t $\in$ [0, $t_1$]}  \\
+0 & \text{t $\in$ [$t_1$, $t_2$]}  \\
+A\cos\omega (t-t_2)-A & \text{t $\in$ [$t_2$, $t_3$]}
+\end{cases}
+$$  
+
+So the velocity $v(t)$ is:  
+
+$$
+v(t) =
+\begin{cases}
+At-\cfrac{A}{\omega}\sin\omega t & \text{t $\in$ [0, $t_1$]}  \\
+2\pi\cfrac{A}{\omega} & \text{t $\in$ [$t_1$, $t_2$]}  \\
+\cfrac{A}{\omega}\sin\omega (t-t_2)-A(t-t_3) & \text{t $\in$ [$t_2$, $t_3$]}
+\end{cases}
+$$  
+
+The equation above must satisfy the constraints:$
+\begin{cases}
+a_{max}=A  \\
+v_{max}=2\pi\cfrac{A}{\omega}
+\end{cases}
+$.  
+
+The accelerate and deccelerate distance $S=\cfrac{2{v_{max}^2}}{a_{max}^2}$. Like the trapezoidal velocity model, two situation should be taken into consideration:  
+1. $S\gt d$, the joint cannot make to the maximum speed. At this time, the time of the uniform speed motion is 0. Multiply the original maximum speed and maximum acceleration by the coefficient $k=\cfrac{da_{max}}{2{v_{max}^2}}$
+  $$
+  \begin{aligned}
+  & v_{max}'=kv_{max} \\
+  & a_{max}'=ka_{max}
+  \end{aligned}
+  $$
+  So the time points are:
+  $$
+  \begin{aligned}
+  & t_1=\cfrac{2\pi}{\omega}  \\
+  & t_2=t_1  \\
+  & t_3=2t_1
+  \end{aligned}
+  $$  
+2. $S\le d$, each time point is
+  $$
+  \begin{aligned}
+  & t_1=\cfrac{2\pi}{\omega}  \\
+  & t_2=t_1-\cfrac{d-S}{v_{max}}  \\
+  & t_3=t_1+t_2
+  \end{aligned}
+  $$  
+
+So the trajectory equation is:  
+$$
+d(t) =
+\begin{cases}
+d_{start}+\cfrac{A}{\omega^2}\cos \omega t+\cfrac{A}{2}t^2-\cfrac{A}{\omega^2} & \text{t $\in$ [0, $t_1$]}  \\
+d_{start}+2\pi^2\cfrac{A}{\omega^2}+2\pi\cfrac{A}{\omega}(t-t_1) & \text{t $\in$ [$t_1$, $t_2$]}  \\
+d_{end}-\cfrac{A}{\omega^2}\cos \omega (t-t_2)-\cfrac{A}{2}(2\pi+1)\cfrac{A}{\omega^2}(t-t_2)^2+2\pi A(t_2-t_1) & \text{t $\in$ [$t_2$, $t_3$]}
+\end{cases}
+$$  
+
+A point-to-point cosine velocity model trajectory planning is shown in the picture below. From left to right, top to bottom is joint posion curve, joint velocity curve and joint accelerate curve.  
+<img decoding="async" src="..\assets\pictures\cosine-joint.svg" width="100%">  
