@@ -6,16 +6,21 @@ layout: default
 
 <main class="main  container">
 
-  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- mathjax config similar to math.stackexchange -->
   <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        inlineMath: [['$','$']]
-      }
-    });
-  </script>
-  
+  MathJax.Hub.Config({
+   jax: ["input/TeX", "output/HTML-CSS"],
+   tex2jax: {
+       inlineMath: [ ['$', '$'] ],
+       displayMath: [ ['$$', '$$']],
+       processEscapes: true,
+       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+   messageStyle: "none",
+   "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+  });
+</script>
+
 
   <article class="article  article--post  content  typeset">
 
@@ -34,4 +39,3 @@ layout: default
 </main>
 
 {% include site-footer.html %}
-

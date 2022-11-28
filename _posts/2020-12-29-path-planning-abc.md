@@ -37,7 +37,6 @@ $$
 $$  
 
 2. $S\le d$, each time point is:  
-3. 
 $$
 \begin{aligned}
 & t_1=\cfrac{v_{max}}{a}  \\
