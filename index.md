@@ -48,7 +48,10 @@ When obstacles are taken into consideration, in order to make the robot complete
         <img src="assets\pictures\capsule-collider-model.png" width="60%">
   </p>
 + AABB (Axis Aligned Bounding Box) and Slabs Method for external-collision detection.  
-+ Sixth degree polynomial method and GA-PSO for joint space obstacle-avoidance trajectory planning.    
-  {% include figure.html image="assets\pictures\joint-space-obstacle-avoidance-trajectory-2.gif" caption="Trajectory planning without considering obstacle" position="right" %}
++ Sixth degree polynomial method and GA-PSO for joint space obstacle-avoidance trajectory planning.  
+  <table><tr>
+  <td><img src="assets\pictures\joint-space-obstacle-avoidance-trajectory-1.gif" border=0></td>
+  <td><img src="assets\pictures\joint-space-obstacle-avoidance-trajectory-2.gif" border=0></td>
+  </tr></table>  
 
-  {% include figure.html image="assets\pictures\joint-space-obstacle-avoidance-trajectory-1.gif" caption="Trajectory planning considering obstacle" position="left" %}
+  _The picture above shows the trajectory planning without considering obstacle (left) and the trajectory planning considering obstacle (right)._
