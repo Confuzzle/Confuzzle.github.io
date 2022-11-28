@@ -44,5 +44,11 @@ _The picture above shows a 6 points joint space trajectoty planning in a total o
 ## Obstacle Avoidance
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
 + Capsule-collider method for self-collision detection.
+  <p style="text-align: center;">
+        <img src="assets\pictures\capsule-collider-model.png" width="60%">
+  </p>
 + AABB (Axis Aligned Bounding Box) and Slabs Method for external-collision detection.  
-+ Sixth degree polynomial method and GA-PSO for joint space obstacle-avoidance trajectory planning.
++ Sixth degree polynomial method and GA-PSO for joint space obstacle-avoidance trajectory planning.    
+  {% include figure.html image="assets\pictures\joint-space-obstacle-avoidance-trajectory-2.gif" caption="Trajectory planning without considering obstacle" position="right" %}
+
+  {% include figure.html image="assets\pictures\joint-space-obstacle-avoidance-trajectory-1.gif" caption="Trajectory planning considering obstacle" position="left" %}
