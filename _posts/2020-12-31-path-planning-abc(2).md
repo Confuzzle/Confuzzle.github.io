@@ -3,7 +3,7 @@ title: Trajectory Planning ABC - Single Point (2)
 categories:
 - Trajectory planning
 excerpt: |
-  Trajectory planning is an important part of robot motion planning, which determines the performance of the entire control system in practical applications. From the perspective of specific implementation, it can generally be divided into two types: joint space and Cartesian space. 
+  Joint space trajectory planning can only ensure that the trajectory of the end passes through a given path point, so the trajectory shape of the end of the manipulator cannot be determined.  
 feature_text: |
   ## Simple trajectory planning
   Joint space planning and Cartesian space planning 
@@ -11,7 +11,7 @@ feature_image: "https://picsum.photos/2560/600?image=733"
 image: "https://picsum.photos/2560/600?image=733"
 ---
 
-Joint space trajectory planning can only ensure that the trajectory of the end passes through a given path point, and the trajectory shape of the end of the manipulator cannot be determined.  
+Joint space trajectory planning can only ensure that the trajectory of the end passes through a given path point, so the trajectory shape of the end of the manipulator cannot be determined.  
 And some specific tasks such as spraying, welding, etc. require the end to move according to a certain path, such as moving along a straight line or an arc. At this time, it is necessary to plan the trajectory in Cartesian space to obtain the end in Cartesian coordinates. The trajectory is then solved through inverse kinematics to obtain the angles of each joint to control the end to complete a specific path. Next, we will introduce the commonly used Cartesian space planning methods: linear interpolation, circular interpolation and attitude interpolation.  
 ### Linear Cartesian path
 Given $A\left(x_{0}, y_{0}, z_{0}\right)$ and $B\left(x_{1}, y_{1}, z_{1}\right)$ , when the arm moves in a straight line from point $A$ to point $B$ , the can be parameterized as the following:  
