@@ -40,7 +40,7 @@ $$
 p(t)=\cfrac{vt^2}{2\Delta T}(\vec{n_{BC}}-\vec{n_{AB}})+v\vec{n_{AB}}t+A'
 $$  
 
-Let $B-A'=d_{1}\vec{n_{AB}}$, $C'-B=d_{2}\vec{n_{BC}}$ and $t=\Delta T$:  
+Because $B-A'=d_{1}\vec{n_{AB}}$, $C'-B=d_{2}\vec{n_{BC}}$ , when $t=\Delta T$, $p(t)$ reaches the point $C$, we have:  
 
 $$
 p(\Delta T)=\cfrac{v\Delta T}{2}(\vec{n_{BC}}+\vec{n_{AB}})+A'=C'
@@ -52,7 +52,7 @@ $$
 \cfrac{v\Delta T}{2}(\vec{n_{BC}}+\vec{n_{AB}})-d_{1}\vec{n_{AB}}=d_{2}\vec{n_{BC}}
 $$  
 
-Apparently  
+Apparently,  
 
 $$
 d_{1}=d_{2}=\cfrac{v\Delta T}{2}
