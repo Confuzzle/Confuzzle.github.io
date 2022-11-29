@@ -59,7 +59,9 @@ When obstacles are taken into consideration, in order to make the robot complete
   </tr></table>  
 
   _The picture above shows the trajectory planning without considering obstacle (left) and the trajectory planning considering obstacle (right)._  
-  ____  
+
+ ----  
+ 
   ### Acknowledgements
   Sincerely thanks to my tutor Prof. Chen and my friends and teammates Xianyou Zhong, Haoran Sun, Liang Tang, Zhengang Huang, [Heng Zhang](https://jack-sherman01.github.io/heng.github.io/), Xianghui Pan and Zhengkai Ao.  
   {% include map.html id="14a5FdxkZmH5I-yah-c86eqRBv3edJYI" title="RAIL" %}
