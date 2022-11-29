@@ -12,6 +12,7 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 {% include button.html text="Robot Demonstrator" link="https://confuzzle.github.io/" color="#0366d6" %}  {% include button.html text="Controller" link="https://confuzzle.github.io/" color="#0d94e7" %}   {% include button.html text="Trajectory Planning " link="https://confuzzle.github.io/" color="#778899" %} 
 
 ## Robot Controller
+<img decoding="async" src="assets\pictures\CRRC-robots.png" width="100%">  
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
 <img decoding="async" src="assets\pictures\Controller-software-architecture.svg" width="100%">  

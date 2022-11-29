@@ -59,6 +59,7 @@ $$
 
 A point-to-point trapezoidal velocity model trajectory planning is shown in the picture below. From left to right, top to bottom is joint posion curve, joint velocity curve and joint accelerate curve.  
 <img decoding="async" src="\assets\pictures\trap-joint.svg" width="100%">  
+However this has a discontinuous acceleration profile.
 
 ### Cosine velocity model
 The cosine velocity model is similar to the trapezoidal velocity model in principle, the difference is that this algorithm is based on a smoother sinusoidal model for sequence point interpolation.  
