@@ -13,6 +13,9 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 
 ## Robot Controller
 <img decoding="async" src="assets\pictures\CRRC-robots.png" width="100%">  
+
+_Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc/en). First two are six-axis industrial robot and the last one is a seven-axis collaborative robot._  
+
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
 <img decoding="async" src="assets\pictures\Controller-software-architecture.svg" width="100%">  
@@ -55,4 +58,8 @@ When obstacles are taken into consideration, in order to make the robot complete
   <td><img src="assets\pictures\joint-space-obstacle-avoidance-trajectory-2.gif" border=0></td>
   </tr></table>  
 
-  _The picture above shows the trajectory planning without considering obstacle (left) and the trajectory planning considering obstacle (right)._
+  _The picture above shows the trajectory planning without considering obstacle (left) and the trajectory planning considering obstacle (right)._  
+  ____  
+  ### Acknowledgements
+  Sincerely thanks to my tutor Prof. Chen and my friends and teammates Xianyou Zhong, Haoran Sun, Liang Tang, Zhengang Huang, [Heng Zhang](https://jack-sherman01.github.io/heng.github.io/), Xianghui Pan and Zhengkai Ao.  
+  {% include map.html id="14a5FdxkZmH5I-yah-c86eqRBv3edJYI" title="RAIL" %}
