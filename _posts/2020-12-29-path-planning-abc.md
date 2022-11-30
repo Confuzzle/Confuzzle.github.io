@@ -86,12 +86,14 @@ At-\cfrac{A}{\omega}\sin\omega t & \text{t $\in$ [0, $t_1$]}  \\
 \end{cases}
 $$  
 
-The equation above must satisfy the constraints:$
+The equation above must satisfy the constraints:  
+
+$$
 \begin{cases}
 a_{max}=A  \\
 v_{max}=2\pi\cfrac{A}{\omega}
 \end{cases}
-$.  
+$$  
 
 The accelerate and deccelerate distance $S=\cfrac{2{v_{max}^2}}{a_{max}^2}$. Like the trapezoidal velocity model, two situation should be taken into consideration:  
 1. $S\gt d$, the joint cannot make to the maximum speed. At this time, the time of the uniform speed motion is 0. Multiply the original maximum speed and maximum acceleration by the coefficient $k=\cfrac{da_{max}}{2{v_{max}^2}}$
