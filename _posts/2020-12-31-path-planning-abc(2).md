@@ -168,7 +168,8 @@ P^{*} \\
 \end{array}\right]
 $$
 
-Where $P^{*}$ stands for the point $P$ in the new coordinate system $S_{circle}$.
+Where $P^{*}$ stands for the point $P$ in the new coordinate system $S_{circle}$.  
+
 Then the central angle corresponding to the arc $\stackrel\frown{P_{1}^{*}P_{3}^{*}}$ to be planned can be calculated:
 
 $$
