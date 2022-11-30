@@ -20,7 +20,7 @@ $$
 p(t)=\left(x_{0}, y_{0}, z_{0}\right)+\vec{n}p(t)
 $$  
 
-Where $\vec{n}=\frac{\left(x_{1}-x_{0}, y_{1}-y_{0}, z_{1}-z_{0}\right)}{\sqrt{\left(x_{1}-x_{0}\right)^{2}+\left(y_{1}-y_{0}\right)^{2}+\left(z_{1}-z_{0}\right)^{2}}}$ stands for the unit vector of directional cosines of the line. And $p(t)$ can be caculated using [trapezoidal velocity model](\_posts\2020-12-29-path-planning-abc.md).
+Where $\vec{n}=\frac{\left(x_{1}-x_{0}, y_{1}-y_{0}, z_{1}-z_{0}\right)}{\sqrt{\left(x_{1}-x_{0}\right)^{2}+\left(y_{1}-y_{0}\right)^{2}+\left(z_{1}-z_{0}\right)^{2}}}$ stands for the unit vector of directional cosines of the line. And $p(t)$ can be caculated using [trapezoidal velocity model](https://confuzzle.github.io/trajectory%20planning/2020/12/29/path-planning-abc/).
 
 ### Concatenation of linear paths
 {% include figure.html image="\assets\pictures\path-planning-abc-concatenation-line-paths.svg" caption="Point A, B, C in which C is the via-point and A' to B' is an over-fly" width="50%" %}  
@@ -182,7 +182,7 @@ $$
 l=\theta r
 $$
 
-Given $a$ and $v_{max}$ the $l(t)$ can be caculated using [trapezoidal velocity model](\_posts\2020-12-29-path-planning-abc.md). It is apparent that  
+Given $a$ and $v_{max}$ the $l(t)$ can be caculated using [trapezoidal velocity model](https://confuzzle.github.io/trajectory%20planning/2020/12/29/path-planning-abc/). It is apparent that  
 
 $$
 P^{'}(t)=\left(r \cos \theta(t), r \sin \theta(t), 0\right)^{T}
