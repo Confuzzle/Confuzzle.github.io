@@ -82,10 +82,14 @@ D_{1}=-\left(A_{1} x_{3}+B_{1} y_{3}+C_{1} z_{3}\right)
 \end{array}\right.
 $$  
 
-Assuming the equations for the two perpendicular bisecting planes of $P_1P_2$ and $P_2P_3$ are $\left\{\begin{array}{l}
+Assuming the equations for the two perpendicular bisecting planes of $P_1P_2$ and $P_2P_3$ are 
+
+$$\left\{\begin{array}{l}
 N_{2}: A_{2} x+B_{2} y+C_{2} z+D_{2}=0 \\
 N_{3}: A_{3} x+B_{3} y+C_{3} z+D_{3}=0
-\end{array}\right.$, it can be easily caculated that  
+\end{array}\right.$$
+
+It can be easily caculated that  
 
 $$
 \left\{\begin{array}{l}
@@ -164,7 +168,8 @@ P^{*} \\
 \end{array}\right]
 $$
 
-Where $P^{*}$ stands for the point $P$ in the new coordinate system $S_{circle}$, then the central angle corresponding to the arc $\stackrel\frown{ P_{1}^{*}P_{3}^{*}}$ to be planned can be calculated
+Where $P^{*}$ stands for the point $P$ in the new coordinate system $S_{circle}$.
+Then the central angle corresponding to the arc $\stackrel\frown{P_{1}^{*}P_{3}^{*}}$ to be planned can be calculated:
 
 $$
 \theta=\arccos \left(\frac{P_{1}^{*}P_{3}^{*}}{\left|P_{1}^{*}\right|\times \left|P_{3}^{*}\right|}\right)
