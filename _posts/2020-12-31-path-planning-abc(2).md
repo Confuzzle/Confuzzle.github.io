@@ -163,17 +163,17 @@ $$
 P \\
 1
 \end{array}\right]=T \cdot\left[\begin{array}{l}
-P^{*} \\
+P^{'} \\
 1
 \end{array}\right]
 $$
 
-Where $P^{*}$ stands for the point $P$ in the new coordinate system $S_{circle}$.  
+Where $P^{'}$ stands for the point $P$ in the new coordinate system $S_{circle}$.  
 
-Then the central angle corresponding to the arc $\stackrel\frown{P_{1}^{*}P_{3}^{*}}$ to be planned can be calculated:
+Then the central angle corresponding to the arc $\stackrel\frown{P_{1}^{'}P_{3}^{'}}$ to be planned can be calculated:
 
 $$
-\theta=\arccos \left(\frac{P_{1}^{*}P_{3}^{*}}{\left|P_{1}^{*}\right|\times \left|P_{3}^{*}\right|}\right)
+\theta=\arccos \left(\frac{P_{1}^{'}P_{3}^{'}}{\left|P_{1}^{'}\right|\times \left|P_{3}^{'}\right|}\right)
 $$
 
 Then according to the central angle and the radius of the arc, the length of the arc can be calculated:  
@@ -185,7 +185,7 @@ $$
 Given $a$ and $v_{max}$ the $l(t)$ can be caculated using [trapezoidal velocity model](2020-12-29-path-planning-abc.md). It is apparent that  
 
 $$
-P^{*}(t)=\left(r \cos \theta(t), r \sin \theta(t), 0\right)^{T}
+P^{'}(t)=\left(r \cos \theta(t), r \sin \theta(t), 0\right)^{T}
 $$
 
 and $P_{t}$ can then be calculated by the transformation matrix $T$.
