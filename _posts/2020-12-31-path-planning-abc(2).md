@@ -81,6 +81,7 @@ C_{1}=\left(x_{1}-x_{3}\right)\left(y_{2}-y_{3}\right)-\left(x_{2}-y_{3}\right)\
 D_{1}=-\left(A_{1} x_{3}+B_{1} y_{3}+C_{1} z_{3}\right)
 \end{array}\right.
 $$  
+
 Assuming the equations for the two perpendicular bisecting planes of $P_1P_2$ and $P_2P_3$ are $\left\{\begin{array}{l}
 N_{2}: A_{2} x+B_{2} y+C_{2} z+D_{2}=0 \\
 N_{3}: A_{3} x+B_{3} y+C_{3} z+D_{3}=0
