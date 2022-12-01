@@ -1,5 +1,5 @@
 ---
-title: Trajectory Planning ABC - Single Point (2)
+title: Trajectory Planning ABC (2) - Cartesian Space 
 categories:
 - Trajectory planning
 excerpt: |
