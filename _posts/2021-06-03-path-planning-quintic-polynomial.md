@@ -76,28 +76,30 @@ with
 
 $$
 Q_{m}=\left[\begin{array}{llllllllllllll}
-q_{0} & q_{1} & \cdots & q_{n-1} & q_{f} & \dot{q}_{0} & \ddot{q}_{0} & \dot{q}_{f} & \ddot{q}_{f} & 0 & 0 & 0 & 0 & \cdots
-\end{array}\right]^{T}
+q_{0} & q_{1} & q_{1} & q_{2} & \cdots & q_{n} & q_{n+1} & 0 & 0 & 0 & 0 & \cdots
+\end{array}\right]^{T} \in \Re ^{6n\times 1}
 $$
 
-and $T_m$ is
+and $T_m\in \Re ^{6n\times 6n}$ is shown in the following. The first $2n$ rows stand for the condition 1, the $4$ rows below stand for the condition 2 then the $4(n-1)$ rows stand for the condition 3.  
 
 $$
-\left[\begin{array}{ccccccccccccc}
-1 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
-1 & \Delta t_{1} & \Delta t_{1}^{2} & \Delta t_{1}^{3} & \Delta t_{1}^{4} & \Delta t_{1}^{5} & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
-\cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots \\
-0 & 0 & 0 & 0 & 0 & 0 & \cdots & 1 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & \cdots & 1 & \Delta t_{n} & \Delta t_{n}^{2} & \Delta t_{n}^{3} & \Delta t_{n}^{4} & \Delta t_{n}^{5} \\
-0 & 1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 2 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 1 & 2 \Delta t_{n} & 3 \Delta t_{n}^{2} & 4 \Delta t_{n}^{3} & 5 \Delta t_{n}^{4} \\
-0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 2 & 6 \Delta t_{n} & 12 \Delta t_{n}^{2} & 20 \Delta t_{n}^{3} \\
-0 & 1 & 2 \Delta t_{1} & 3 \Delta t_{1}^{2} & 4 \Delta t_{1}^{3} & 5 \Delta t_{1}^{4} & \cdots & 0 & -1 & 0 & 0 & 0 & 0 \\
-0 & 0 & 2 & 6 \Delta t_{1} & 12 \Delta t_{1}^{2} & 20 \Delta t_{1}^{3} & \cdots & 0 & 0 & -2 & 0 & 0 & 0 \\
-0 & 0 & 0 & 6 & 24 \Delta t_{1} & 60 \Delta t_{1}^{2} & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 6 & 0 & 0 \\
-\cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots
+\left[\begin{array}{ccccccccccccccccccc}
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & \Delta t_{1} & \Delta t_{1}^{2} & \Delta t_{1}^{3} & \Delta t_{1}^{4} & \Delta t_{1}^{5} & 0 & 0 & 0 & 0 & 0 & 0 &  \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & \Delta t_{2} & \Delta t_{2}^{2} & \Delta t_{2}^{3} & \Delta t_{2}^{4} & \Delta t_{2}^{5} & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+\cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &\cdots & 1 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &\cdots & 1 & \Delta t_{n} & \Delta t_{n}^{2} & \Delta t_{n}^{3} & \Delta t_{n}^{4} & \Delta t_{n}^{5} \\
+0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 1 & 2 \Delta t_{n} & 3 \Delta t_{n}^{2} & 4 \Delta t_{n}^{3} & 5 \Delta t_{n}^{4} \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 2 & 6 \Delta t_{n} & 12 \Delta t_{n}^{2} & 20 \Delta t_{n}^{3} \\
+0 & 1 & 2 \Delta t_{1} & 3 \Delta t_{1}^{2} & 4 \Delta t_{1}^{3} & 5 \Delta t_{1}^{4}  & 0 & -1 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 2 & 6 \Delta t_{1} & 12 \Delta t_{1}^{2} & 20 \Delta t_{1}^{3} & 0 & 0 & -2 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 6 & 24 \Delta t_{1} & 60 \Delta t_{1}^{2} & 0 & 0 & 0 & 0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 & 0 & 0 \\
+\cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots
 \end{array}\right]
 $$
 
