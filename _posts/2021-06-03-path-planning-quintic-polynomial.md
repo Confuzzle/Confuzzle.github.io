@@ -116,9 +116,9 @@ $$
 q(t)=
 \left\{\begin{array}{l}
 a_{0}^{1}+a_{1}^{1} t+a_{2}^{1} t^{2}+a_{3}^{1} t^{3}+a_{4}^{1} t^{4}+a_{5}^{1} t^{5} & t \in\left[0, \quad \Delta t_{1}\right] \\
-a_{0}^{2}+a_{1}^{2} t+a_{2}^{2} t^{2}+a_{3}^{2} t^{3}+a_{4}^{2} t^{4}+a_{5}^{2} t^{5} & t \in\left[\Delta t_{1}, \quad \Delta t_{2}\right] \\
+a_{0}^{2}+a_{1}^{2} t+a_{2}^{2} t^{2}+a_{3}^{2} t^{3}+a_{4}^{2} t^{4}+a_{5}^{2} t^{5} & t \in\left[0, \quad \Delta t_{2}\right] \\
 ... \\
-a_{0}^{n}+a_{1}^{n} t+a_{2}^{n} t^{2}+a_{3}^{n} t^{3}+a_{4}^{n} t^{4}+a_{5}^{n} t^{5} & t \in\left[\Delta t_{n-1}, \quad \Delta t_{n}\right]
+a_{0}^{n}+a_{1}^{n} t+a_{2}^{n} t^{2}+a_{3}^{n} t^{3}+a_{4}^{n} t^{4}+a_{5}^{n} t^{5} & t \in\left[0, \quad \Delta t_{n}\right]
 \end{array}\right.
 $$
 
