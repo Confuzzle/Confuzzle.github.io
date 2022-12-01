@@ -64,23 +64,23 @@ For multi-point planning, it is essentially an extension of the above point-to-p
 Considering $n$ segments of trajectories, the velocity of the starting point and the target point of the trajectories is required to be $0$, then the model is composed of $n$ quintic polynomials, and a total of $6n$ model parameters need to be determined.  
 Unknown parameters can be determined by
 1. The first and last position of each trajectory, $n$ trajectory generates a total of $2n$ constraints.  
-2. The starting point velocity of the entire trajectory is 0, the acceleration is 0, the target point velocity is 0, and the acceleration is 0, resulting a total of 4 constraints are generated.  
+2. The starting point velocity of the entire trajectory is $0$, the acceleration is $0$, the target point velocity is $0$, and the acceleration is $0$, resulting a total of $4$ constraints are generated.  
 3. There are $n-1$ intermediate points, and each intermediate point satisfies continuous velocity, continuous acceleration, and continuous jerk, so a total of $4(n-1)$ constraints are generated.
 So we have
 
 $$
-Q_g=T_g⋅X_g
+Q_m=T_m⋅X_m
 $$
 
 with
 
 $$
-Q_{g}=\left[\begin{array}{llllllllllllll}
+Q_{m}=\left[\begin{array}{llllllllllllll}
 q_{0} & q_{1} & \cdots & q_{n-1} & q_{f} & \dot{q}_{0} & \ddot{q}_{0} & \dot{q}_{f} & \ddot{q}_{f} & 0 & 0 & 0 & 0 & \cdots
 \end{array}\right]^{T}
 $$
 
-and $T_g$ is
+and $T_m$ is
 
 $$
 \left[\begin{array}{ccccccccccccc}
@@ -104,7 +104,7 @@ $$
 and 
 
 $$
-X_{g}=\left[\begin{array}{llllllllllllll}
+X_{m}=\left[\begin{array}{llllllllllllll}
 a_{0}^{1} & a_{1}^{1} & \cdots & a_{0}^{k} & a_{1}^{k} & a_{2}^{k} & a_{3}^{k} & a_{4}^{k} & a_{5}^{k} & \cdots & a_{2}^{n} & a_{3}^{n} & a_{4}^{n} & a_{5}^{n}
 \end{array}\right]^{T}
 $$
