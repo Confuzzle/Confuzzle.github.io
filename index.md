@@ -12,8 +12,8 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 {% include button.html text="Robot Demonstrator" link="https://confuzzle.github.io/" color="#0366d6" %}  {% include button.html text="Controller" link="https://confuzzle.github.io/" color="#0d94e7" %}   {% include button.html text="Trajectory Planning " link="https://confuzzle.github.io/" color="#778899" %} 
 
 ## Robot Controller
-
-{% include figure.html image="\assets\pictures\CRRC-robots.png" caption="Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc/en). First two are six-axis industrial robot and the last one is a seven-axis collaborative robot." width="60%" %}  
+<img decoding="async" src="assets\pictures\CRRC-robots.png" width="100%">   
+Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc/en). First two are six-axis industrial robot and the last one is a seven-axis collaborative robot.
 
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
@@ -22,15 +22,14 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 + Compatible for six/seven axis robot, DELTA robot and SCARA robot.
 
 ## Robot Demonstrator  
-
-![](assets\pictures\robot-demonstrator-video-1.gif)  
-
+{% include figure.html image="\assets\pictures\robot-demonstrator-video-1.gif" caption="Robot demonstrator running code on simulation controller." width="100%" %}  
 
 For industrial robots, in addition to the mechanical body, control system, and servos, a very important component is the teaching system. Through the teaching system, the operator can view the operation information of the robot and control the robot to move to the designated position by sending operation instructions.  
 
 + 3D simulation display, mouse interaction, camera switching. The more real the 3D visualization module is, the more it can show the robot model and the running status of the virtual robot to the user. Now support specified six and seven axis robot STL files, other kinds of robot can be easily adapted.   
 + Cross-platform, now it can run under Windows and Ubuntu of x86 architecture, and ARM version of Linux is also supported. Compatible for six/seven axis robot, DELTA robot and SCARA robot.
-<img decoding="async" src="assets\pictures\robot-demonstrator-mainpage.png" >  
+{% include figure.html image="\assets\pictures\robot-demonstrator-mainpage.png" caption="Robot demonstrator running on Windows and Ubuntu" width="100%" %}  
+
 + Support text-based robot programming with motion control instructions such as MovJ, MovL etc. Conditional selection instruction like IF/ELSE/ENDIF and LOOP etc. also supported. Graphic-based programming under development.
 {% include figure.html image="\assets\pictures\robot-demonstrator-graphic-programming.png" caption="Graphic-programming" width="85%" %}  
 {% include figure.html image="\assets\pictures\robot-demonstrator-text-programming.png" caption="Text-based programming" width="85%" %}  
@@ -40,9 +39,8 @@ For industrial robots, in addition to the mechanical body, control system, and s
 
 ## Trajectory Planning Algorithm
 + Multiple points planning with [quintic polynomial](_posts/2021-06-03-path-planning-quintic-polynomial.md) method for joint space planning.  
-  
-  {% include figure.html image="\assets\pictures\multiple-points-joint-space-planning.svg" caption="The picture above shows a 6 points joint space trajectoty planning in a total of 15 seconds, and in the picture from left to right, from top to bottom, stands for joint position, joint velocity, joint accelerate and joint jerk.  CPH for Cubic Polynomial Heuristic Algorithm, CPS for Cubic Polynomial Smooth Algorithm for, QPH for Quintic Polynomial Heuristic Algorithm, QPS for Quintic Polynomial Smooth Algorithm. The main difference between the 'Heuristic Algorithm' and the 'Smooth Algorithm' is that they use a different way to handle the speed and accelerate of the middle points. The red line is the proposed method." width="100%" %}  
-  
+{% include figure.html image="\assets\pictures\multiple-points-joint-space-planning.svg" caption="The picture above shows a 6 points joint space trajectoty planning in a total of 15 seconds, and in the picture from left to right, from top to bottom, stands for joint position, joint velocity, joint accelerate and joint jerk.  CPH for Cubic Polynomial Heuristic Algorithm, CPS for Cubic Polynomial Smooth Algorithm for, QPH for Quintic Polynomial Heuristic Algorithm, QPS for Quintic Polynomial Smooth Algorithm. The main difference between the 'Heuristic Algorithm' and the 'Smooth Algorithm' is that they use a different way to handle the speed and accelerate of the middle points. The red line is the proposed method." width="100%" %}  
+
 + Position interpolation method based on line/arc and an attitude interpolation method based on quaterion for [joint](_posts/2020-12-29-path-planning-abc.md) space trajectory planning and [Cartesian](_posts/2020-12-31-path-planning-abc(2).md) space trajectory planning.  
 + A combination of quintic polynomial method and GA-PSO algrithm for smooth and time-optimal joint space planning.  
 
@@ -54,7 +52,7 @@ $$
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
 + Capsule-collider method for self-collision detection.  
   
-  {% include figure.html image="\assets\pictures\capsule-collider-model.png" caption="CRCC seven-axis collaborative robot in capsule-collider module and capsule-collider method sketch" width="60%" %}  
+{% include figure.html image="\assets\pictures\capsule-collider-model.png" caption="CRCC seven-axis collaborative robot in capsule-collider module and capsule-collider method sketch" width="60%" %}  
 
 + AABB (Axis Aligned Bounding Box) and Slabs Method for external-collision detection.  
 + Sixth degree polynomial method and GA-PSO for joint space obstacle-avoidance trajectory planning.  
@@ -63,7 +61,7 @@ When obstacles are taken into consideration, in order to make the robot complete
   <td><img src="assets\pictures\joint-space-obstacle-avoidance-trajectory-2.gif" border=0></td>
   </tr></table>  
 
-  _The picture above shows the trajectory planning without considering obstacle (left) and the trajectory planning considering obstacle (right)._  
+  The picture above shows the trajectory planning without considering obstacle (left) and the trajectory planning considering obstacle (right).  
 
 ----  
 ### Acknowledgements  
