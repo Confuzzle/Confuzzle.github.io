@@ -17,7 +17,7 @@ Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc
 
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
-<img decoding="async" src="assets\pictures\Controller-software-architecture.svg" width="100%">  
+{% include figure.html image="\assets\pictures\Controller-software-architecture.svg" caption="Robot controller's main architecture." width="100%" %}  
 
 + Compatible for six/seven axis robot, DELTA robot and SCARA robot.
 
@@ -35,7 +35,7 @@ For industrial robots, in addition to the mechanical body, control system, and s
 {% include figure.html image="\assets\pictures\robot-demonstrator-text-programming.png" caption="Text-based programming" width="85%" %}  
 
 + Modern HDI, simple and easy to use.
-<img decoding="async" src="assets\pictures\robot-demonstrator-UI.png" width="100%">  
+{% include figure.html image="\assets\pictures\robot-demonstrator-UI.png" caption="Ribbon menu, chart view of joints value and multi-camera positions in robot demonstrator." width="95%" %}  
 
 ## Trajectory Planning Algorithm
 + Multiple points planning with [quintic polynomial](_posts/2021-06-03-path-planning-quintic-polynomial.md) method for joint space planning.  
@@ -45,9 +45,10 @@ For industrial robots, in addition to the mechanical body, control system, and s
 + A combination of quintic polynomial method and GA-PSO algrithm for smooth and time-optimal joint space planning.  
 
 $$
-f=\omega_{1} \cdot f_{-} \text {time }+\omega_{2} \cdot f_{-} \eta+\omega_{3} \cdot f_{-} v e l+\omega_{4} \cdot f_{-} a c c
+f=\omega_{1} \cdot f_{time} +\omega_{2} \cdot f_{\eta}+\omega_{3} \cdot f_{vel}+\omega_{4} \cdot f_{acc}
 $$
 
+Where $f_{time}$ stands for the total time of the whole trajectory, $f_{\eta}$ stands for the energy cost in the whole trajectory, $f_{acc}$ and $ f_{vel}$ are the velocity and acceleration boundaries.
 ## Obstacle Avoidance
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
 + Capsule-collider method for self-collision detection.  
