@@ -33,7 +33,9 @@ For industrial robots, in addition to the mechanical body, control system, and s
 + Cross-platform, now it can run under Windows and Ubuntu of x86 architecture, and ARM version of Linux is also supported. Compatible for six/seven axis robot, DELTA robot and SCARA robot.
 <img decoding="async" src="assets\pictures\robot-demonstrator-mainpage.png" >  
 + Support text-based robot programming with motion control instructions such as MovJ, MovL etc. Conditional selection instruction like IF/ELSE/ENDIF and LOOP etc. also supported. Graphic-based programming under development.
-<img decoding="async" src="assets\pictures\robot-demonstrator-graphic-programming.png" width="100%"> 
+{% include figure.html image="\assets\pictures\robot-demonstrator-graphic-programming.png" caption="Graphic-programming" width="85%" %}  
+{% include figure.html image="\assets\pictures\robot-demonstrator-text-programming.png" caption="Text-based programming" width="85%" %}  
+
 + Modern HDI, simple and easy to use.
 <img decoding="async" src="assets\pictures\robot-demonstrator-UI.png" width="100%">  
 
@@ -52,9 +54,7 @@ $$
 ## Obstacle Avoidance
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
 + Capsule-collider method for self-collision detection.
-  <p style="text-align: center;">
-        <img src="assets\pictures\capsule-collider-model.png" width="60%">
-  </p>
+  {% include figure.html image="\assets\pictures\capsule-collider-model.png" caption="CRCC seven-axis collaborative robot in capsule-collider module and capsule-collider method sketch" width="60%" %}  
 + AABB (Axis Aligned Bounding Box) and Slabs Method for external-collision detection.  
 + Sixth degree polynomial method and GA-PSO for joint space obstacle-avoidance trajectory planning.  
   <table><tr>
