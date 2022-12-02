@@ -48,7 +48,8 @@ $$
 f=\omega_{1} \cdot f_{time} +\omega_{2} \cdot f_{\eta}+\omega_{3} \cdot f_{vel}+\omega_{4} \cdot f_{acc}
 $$
 
-Where $f_{time}$ stands for the total time of the whole trajectory, $f_{\eta}$ stands for the energy cost in the whole trajectory, $f_{acc}$ and $ f_{vel}$ are the velocity and acceleration boundaries.
+Where $f_{time}$ stands for the total time of the whole trajectory, $f_{\eta}$ stands for the energy cost in the whole trajectory, $f_{acc}$ and $ f_{vel}$ are the velocity and acceleration boundaries.  
+
 ## Obstacle Avoidance
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
 + Capsule-collider method for self-collision detection.  
