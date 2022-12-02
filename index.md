@@ -43,7 +43,11 @@ For industrial robots, in addition to the mechanical body, control system, and s
 _The picture above shows a 6 points joint space trajectoty planning in a total of 15 seconds, and in the picture from left to right, from top to bottom, stands for joint position, joint velocity, joint accelerate and joint jerk.  CPH for Cubic Polynomial Heuristic Algorithm, CPS for Cubic Polynomial Smooth Algorithm for, QPH for Quintic Polynomial Heuristic Algorithm, QPS for Quintic Polynomial Smooth Algorithm. The main difference between the 'Heuristic Algorithm' and the 'Smooth Algorithm' is that they use a different way to handle the speed and accelerate of the middle points. The red line is the proposed method._  
 
 + Position interpolation method based on line/arc and an attitude interpolation method based on quaterion for [joint](_posts/2020-12-29-path-planning-abc.md) space trajectory planning and [Cartesian](_posts/2020-12-31-path-planning-abc(2).md) space trajectory planning.  
-+ A combination of quintic polynomial method and GA-PSO algrithm for smooth and time-optimal joint space planning.
++ A combination of quintic polynomial method and GA-PSO algrithm for smooth and time-optimal joint space planning.  
+
+$$
+f=\omega_{1} \cdot f_{-} \text {time }+\omega_{2} \cdot f_{-} \eta+\omega_{3} \cdot f_{-} v e l+\omega_{4} \cdot f_{-} a c c
+$$
 
 ## Obstacle Avoidance
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
