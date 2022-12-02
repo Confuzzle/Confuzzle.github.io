@@ -12,17 +12,17 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 {% include button.html text="Robot Demonstrator" link="https://confuzzle.github.io/" color="#0366d6" %}  {% include button.html text="Controller" link="https://confuzzle.github.io/" color="#0d94e7" %}   {% include button.html text="Trajectory Planning " link="https://confuzzle.github.io/" color="#778899" %} 
 
 ## Robot Controller
-<img decoding="async" src="assets\pictures\CRRC-robots.png" width="100%">   
+{% include figure.html image="\assets\pictures\CRRC-robots.png" caption="Robot arms now we have" width="95%" %}  
 Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc/en). First two are six-axis industrial robot and the last one is a seven-axis collaborative robot.
 
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
-{% include figure.html image="\assets\pictures\Controller-software-architecture.svg" caption="Robot controller's main architecture." width="100%" %}  
+{% include figure.html image="\assets\pictures\Controller-software-architecture.svg" caption="Robot controller's main architecture" width="100%" %}  
 
 + Compatible for six/seven axis robot, DELTA robot and SCARA robot.
 
 ## Robot Demonstrator  
-{% include figure.html image="\assets\pictures\robot-demonstrator-video-1.gif" caption="Robot demonstrator running code on simulation controller." width="100%" %}  
+{% include figure.html image="\assets\pictures\robot-demonstrator-video-1.gif" caption="Robot demonstrator running code on simulation controller" width="100%" %}  
 
 For industrial robots, in addition to the mechanical body, control system, and servos, a very important component is the teaching system. Through the teaching system, the operator can view the operation information of the robot and control the robot to move to the designated position by sending operation instructions.  
 

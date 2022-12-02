@@ -58,8 +58,9 @@ d_{end}-\cfrac{1}{2}a(t_3-t)^2 & \text{t $\in$ [$t_2$, $t_3$]}
 $$  
 
 A point-to-point trapezoidal velocity model trajectory planning is shown in the picture below. From left to right, top to bottom is joint posion curve, joint velocity curve and joint accelerate curve.  
-<img decoding="async" src="\assets\pictures\trap-joint.svg" width="100%">  
-However this has a discontinuous acceleration profile.
+{% include figure.html image="\assets\pictures\trap-joint.svg" caption="Position, velocity and acceleration of the trajectory planned using trapezoidal velocity model" width="95%" %}   
+
+However as it shows in the picture, the trajectory has a discontinuous acceleration profile.
 
 ### Cosine velocity model
 The cosine velocity model is similar to the trapezoidal velocity model in principle, the difference is that this algorithm is based on a smoother sinusoidal model for sequence point interpolation.  
@@ -131,4 +132,4 @@ d_{end}-\cfrac{A}{\omega^2}\cos \omega (t-t_2)-\cfrac{A}{2}(2\pi+1)\cfrac{A}{\om
 $$  
 
 A point-to-point cosine velocity model trajectory planning is shown in the picture below. From left to right, top to bottom is joint posion curve, joint velocity curve and joint accelerate curve.  
-<img decoding="async" src="\assets\pictures\cosine-joint.svg" width="100%">  
+{% include figure.html image="\assets\pictures\cosine-joint.svg" caption="Position, velocity and acceleration of the trajectory planned using cosine velocity model" width="95%" %}   
