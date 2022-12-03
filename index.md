@@ -43,7 +43,7 @@ For industrial robots, in addition to the mechanical body, control system, and s
 + Multiple points planning with [quintic polynomial](_posts/2021-06-03-path-planning-quintic-polynomial.md) method for joint space planning.  
 {% include figure.html image="\assets\pictures\multiple-points-joint-space-planning.svg" caption="The picture above shows a 6 points joint space trajectoty planning in a total of 15 seconds, and in the picture from left to right, from top to bottom, stands for joint position, joint velocity, joint accelerate and joint jerk.  CPH for Cubic Polynomial Heuristic Algorithm, CPS for Cubic Polynomial Smooth Algorithm for, QPH for Quintic Polynomial Heuristic Algorithm, QPS for Quintic Polynomial Smooth Algorithm. The main difference between the 'Heuristic Algorithm' and the 'Smooth Algorithm' is that they use a different way to handle the speed and accelerate of the middle points. The red line is the proposed method" width="100%" %}  
 
-+ An algrithm named GGP with combination of quintic polynomial method and GA-PSO for smooth and time-optimal joint space planning.  
++ An algrithm named [GGP](https://confuzzle.github.io/trajectory%20planning/2021/08/24/ggp/) with combination of quintic polynomial method and GA-PSO for smooth and time-optimal joint space planning.  
 
   $$
   f=\omega_{1} \cdot f_{time} +\omega_{2} \cdot f_{\eta}+\omega_{3} \cdot f_{vel}+\omega_{4} \cdot f_{acc}
