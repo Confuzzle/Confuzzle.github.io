@@ -38,10 +38,11 @@ For industrial robots, in addition to the mechanical body, control system, and s
 {% include figure.html image="\assets\pictures\robot-demonstrator-UI.png" caption="Ribbon menu, chart view of joints value and multi-camera positions in robot demonstrator." width="95%" %}  
 
 ## Trajectory Planning Algorithm
++ Position interpolation method based on line/arc and an attitude interpolation method based on quaterion for [joint](_posts/2020-12-29-path-planning-abc.md) space trajectory planning and [Cartesian](https://confuzzle.github.io/trajectory%20planning/2020/12/31/path-planning-abc(2)/) space trajectory planning.  
+  
 + Multiple points planning with [quintic polynomial](_posts/2021-06-03-path-planning-quintic-polynomial.md) method for joint space planning.  
 {% include figure.html image="\assets\pictures\multiple-points-joint-space-planning.svg" caption="The picture above shows a 6 points joint space trajectoty planning in a total of 15 seconds, and in the picture from left to right, from top to bottom, stands for joint position, joint velocity, joint accelerate and joint jerk.  CPH for Cubic Polynomial Heuristic Algorithm, CPS for Cubic Polynomial Smooth Algorithm for, QPH for Quintic Polynomial Heuristic Algorithm, QPS for Quintic Polynomial Smooth Algorithm. The main difference between the 'Heuristic Algorithm' and the 'Smooth Algorithm' is that they use a different way to handle the speed and accelerate of the middle points. The red line is the proposed method" width="100%" %}  
 
-+ Position interpolation method based on line/arc and an attitude interpolation method based on quaterion for [joint](_posts/2020-12-29-path-planning-abc.md) space trajectory planning and [Cartesian](https://confuzzle.github.io/trajectory%20planning/2020/12/31/path-planning-abc(2)/) space trajectory planning.  
 + A combination of quintic polynomial method and GA-PSO algrithm for smooth and time-optimal joint space planning.  
 
   $$
