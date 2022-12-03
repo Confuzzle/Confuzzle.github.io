@@ -9,7 +9,7 @@ Now I'm a postgraduate in [RAIL](https://rail.tongji.edu.cn/main.htm), Robotics 
 My main research field includes high-performance control platform of industrial robots and collaborative robots, such as **robot control platforms**, **robot teaching software** development and **trajectory planning** algorithms.  
 _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 
-{% include button.html text="Robot Demonstrator" link="https://confuzzle.github.io/" color="#0366d6" %}  {% include button.html text="Controller" link="https://confuzzle.github.io/" color="#0d94e7" %}   {% include button.html text="Trajectory Planning " link="https://confuzzle.github.io/" color="#778899" %} 
+{% include button.html text="Robot Demonstrator" link="https://confuzzle.github.io/" color="#0366d6" %}  {% include button.html text="Robot Controller" link="https://confuzzle.github.io/" color="#0d94e7" %}   {% include button.html text="Trajectory Planning " link="https://confuzzle.github.io/categories/#trajectory-planning" color="#778899" %} 
 
 ## Robot Controller
 {% include figure.html image="\assets\pictures\CRRC-robots.png" caption="Robot arms now we have" width="95%" %}  
@@ -43,7 +43,7 @@ For industrial robots, in addition to the mechanical body, control system, and s
 + Multiple points planning with [quintic polynomial](_posts/2021-06-03-path-planning-quintic-polynomial.md) method for joint space planning.  
 {% include figure.html image="\assets\pictures\multiple-points-joint-space-planning.svg" caption="The picture above shows a 6 points joint space trajectoty planning in a total of 15 seconds, and in the picture from left to right, from top to bottom, stands for joint position, joint velocity, joint accelerate and joint jerk.  CPH for Cubic Polynomial Heuristic Algorithm, CPS for Cubic Polynomial Smooth Algorithm for, QPH for Quintic Polynomial Heuristic Algorithm, QPS for Quintic Polynomial Smooth Algorithm. The main difference between the 'Heuristic Algorithm' and the 'Smooth Algorithm' is that they use a different way to handle the speed and accelerate of the middle points. The red line is the proposed method" width="100%" %}  
 
-+ A combination of quintic polynomial method and GA-PSO algrithm for smooth and time-optimal joint space planning.  
++ An algrithm named GGP with combination of quintic polynomial method and GA-PSO for smooth and time-optimal joint space planning.  
 
   $$
   f=\omega_{1} \cdot f_{time} +\omega_{2} \cdot f_{\eta}+\omega_{3} \cdot f_{vel}+\omega_{4} \cdot f_{acc}
@@ -51,7 +51,7 @@ For industrial robots, in addition to the mechanical body, control system, and s
 
   Where $f_{time}$ stands for the total time of the whole trajectory, $f_{\eta}$ stands for the energy cost in the whole trajectory, $f_{acc}$ and $ f_{vel}$ are the velocity and acceleration boundaries.  
 
-{% include figure.html image="\assets\pictures\gapso-4-points-joint-space-planning.svg" caption="GA-PSO trajectory planning for 4 points with a total time of 8.783 seconds(2.000s + 2.000s + 2.648s + 2.135s), a max speed of 80 deg/s and a max acceleration of 100 deg^2/s for each joint" width="95%" %}  
+{% include figure.html image="\assets\pictures\gapso-4-points-joint-space-planning.svg" caption="GGP trajectory planning for 4 points with a total time of 8.783 seconds(2.000s + 2.000s + 2.648s + 2.135s), a max speed of 80 deg/s and a max acceleration of 100 deg^2/s for each joint" width="95%" %}  
 
 ## Obstacle Avoidance
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
