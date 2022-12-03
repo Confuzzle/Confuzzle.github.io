@@ -50,7 +50,7 @@ For industrial robots, in addition to the mechanical body, control system, and s
 
   Where $f_{time}$ stands for the total time of the whole trajectory, $f_{\eta}$ stands for the energy cost in the whole trajectory, $f_{acc}$ and $ f_{vel}$ are the velocity and acceleration boundaries.  
 
-{% include figure.html image="\assets\pictures\gapso-4-points-joint-space-planning.svg" caption="GA-PSO trajectory planning for 4 points with a total time of 8.783 seconds, a max speed of 80 deg/s and a max acceleration of 100 deg^2/s for each joint" width="95%" %}  
+{% include figure.html image="\assets\pictures\gapso-4-points-joint-space-planning.svg" caption="GA-PSO trajectory planning for 4 points with a total time of 8.783 seconds(2.000s + 2.000s + 2.648s + 2.135s), a max speed of 80 deg/s and a max acceleration of 100 deg^2/s for each joint" width="95%" %}  
 
 ## Obstacle Avoidance
 When obstacles are taken into consideration, in order to make the robot complete some specified tasks safely, it is extremely necessary to achieve an obstacle-avoidance trajectory planning. Such algrothism can further expand the planning capabilities of the robot control system.  
