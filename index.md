@@ -2,7 +2,7 @@
 title: Yuan Zhao
 feature_text: |
   Something interesting about me, my team and our works
-feature_image: "https://picsum.photos/1300/400"
+feature_image: "/assets/pictures/mainpage-photo-first.png"
 ---
 ## About Me
 Now I'm a postgraduate in [RAIL](https://rail.tongji.edu.cn/main.htm), Robotics and Artificial Intelligence Lab which started in 1990 and is one of the earliest laboratories in China engaged in the research of robotics and artificial intelligence.  
