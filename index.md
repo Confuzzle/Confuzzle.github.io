@@ -78,6 +78,6 @@ Sincerely thanks to my tutor Prof. Chen and my friends and teammates Xianyou Zho
 
 ----  
 ### Statistics  
-<div style="width:200px; margin-left: 30px;">
+<div style="width:300px; text-align: center;">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=1bK_5DIp2j-965mulp0ZG7EO0B_Q9EkxrIe7_347rY4"></script>
 </div>
