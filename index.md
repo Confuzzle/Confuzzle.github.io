@@ -74,3 +74,5 @@ When obstacles are taken into consideration, in order to make the robot complete
 Sincerely thanks to my tutor Prof. Chen and my friends and teammates Xianyou Zhong, Haoran Sun, Liang Tang, Zhengang Huang, [Heng Zhang](https://jack-sherman01.github.io/heng.github.io/), Xianghui Pan and Zhengkai Ao.  
 
 {% include map.html id="14a5FdxkZmH5I-yah-c86eqRBv3edJYI" title="RAIL" %}
+
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=1bK_5DIp2j-965mulp0ZG7EO0B_Q9EkxrIe7_347rY4"></script>
