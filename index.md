@@ -15,7 +15,7 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc/en). First two are six-axis industrial robot and the last one is a seven-axis collaborative robot.  
 
 ## Robot Controller
-{% include figure.html image="\assets\pictures\seven-robot-cartesian-line.gif" caption="Seven axis manipulator moves in an rectilinear path" width="35%" %}  
+{% include figure.html image="\assets\pictures\seven-robot-cartesian-line.gif" caption="Seven axis manipulator moves in a rectilinear path" width="35%" %}  
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
 {% include figure.html image="\assets\pictures\Controller-software-architecture.svg" caption="Robot controller's main architecture" width="100%" %}  
