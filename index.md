@@ -11,10 +11,11 @@ _Click [here](https://confuzzle.github.io/resume/) to see my resume._
 
 {% include button.html text="Robot Demonstrator" link="https://confuzzle.github.io/" color="#0366d6" %}  {% include button.html text="Robot Controller" link="https://confuzzle.github.io/" color="#0d94e7" %}   {% include button.html text="Trajectory Planning " link="https://confuzzle.github.io/categories/#trajectory-planning" color="#778899" %} 
 
-## Robot Controller
 {% include figure.html image="\assets\pictures\CRRC-robots.png" caption="Robot arms now we have" width="95%" %}  
-Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc/en). First two are six-axis industrial robot and the last one is a seven-axis collaborative robot.
+Robot arms our team developed with [CRRC Sifang Co., Ltd.](https://www.crrcgc.cc/en). First two are six-axis industrial robot and the last one is a seven-axis collaborative robot.  
 
+## Robot Controller
+{% include figure.html image="\assets\pictures\seven-robot-cartesian-line.gif" caption="Seven axis manipulator moves in an rectilinear path" width="35%" %}  
 + General control system based on an overall architecture of IPC RTOS with fieldbus.  
 + Three-layer software architecture: Communication and Task Analysis Layer, Task Execution Layer and Data Interaction Layer.
 {% include figure.html image="\assets\pictures\Controller-software-architecture.svg" caption="Robot controller's main architecture" width="100%" %}  
