@@ -60,6 +60,8 @@ $$
 A point-to-point trapezoidal velocity model trajectory planning is shown in the picture below. From left to right, top to bottom is joint posion curve, joint velocity curve and joint accelerate curve.  
 {% include figure.html image="\assets\pictures\trap-joint.svg" caption="Position, velocity and acceleration of the trajectory planned using trapezoidal velocity model" width="95%" %}   
 
+{% include figure.html image="\assets\pictures\trap-joint-real-robot.png" caption="Position and velocity of the real robot's joint-1 using trapezoidal velocity model" width="95%" %}  
+
 However as it shows in the picture, the trajectory has a discontinuous acceleration profile.
 
 ### Cosine velocity model

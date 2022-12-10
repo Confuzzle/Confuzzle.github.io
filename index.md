@@ -46,11 +46,11 @@ For industrial robots, in addition to the mechanical body, control system, and s
 
 + An algrithm named [GGP](https://confuzzle.github.io/trajectory%20planning/2021/08/24/ggp/) with combination of quintic polynomial method and GA-PSO for smooth and time-optimal joint space planning.  
 
-  $$
-  f=\omega_{1} \cdot f_{time} +\omega_{2} \cdot f_{\eta}+\omega_{3} \cdot f_{vel}+\omega_{4} \cdot f_{acc}
-  $$
+$$
+f=\omega_{1} \cdot f_{time} +\omega_{2} \cdot f_{\eta}+\omega_{3} \cdot f_{vel}+\omega_{4} \cdot f_{acc}
+$$
 
-  Where $f_{time}$ stands for the total time of the whole trajectory, $f_{\eta}$ stands for the energy cost in the whole trajectory, $f_{acc}$ and $ f_{vel}$ are the velocity and acceleration boundaries.  
+Where $f_{time}$ stands for the total time of the whole trajectory, $f_{\eta}$ stands for the energy cost in the whole trajectory, $f_{acc}$ and $ f_{vel}$ are the velocity and acceleration boundaries.  
 
 {% include figure.html image="\assets\pictures\gapso-4-points-joint-space-planning.svg" caption="GGP trajectory planning for 4 points with a total time of 8.783 seconds(2.000s + 2.000s + 2.648s + 2.135s), a max speed of 80 deg/s and a max acceleration of 100 deg^2/s for each joint" width="95%" %}  
 
