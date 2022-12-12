@@ -49,9 +49,10 @@ When the equal sign in the above equation is true, the length of the linear segm
 As shown in the figure, the three adjacent path points are called $j$, $k$ and $l$, the duration of the parabolic line segment at the path point $k$ is $t_{k}$, the duration of the linear part between the points $j$ and $k$ is $t_{jk}$, the total duration of the line segment connecting $j$ and $k$ is $t_{djk}$, the velocity of the linear part is $\dot{q} _{jk}$, and the acceleration of the projectile line segment at the point $k$ is $\ddot{q} _{k}$.  
 
 
-{% include figure.html image="\assets\pictures\path-planning-abc-para-curve-2.svg" caption="Linear Interpolation Trajectory of Multi Parabolic Connection" width="95%" %}  
+{% include figure.html image="\assets\pictures\path-planning-abc-para-curve-2.svg" caption="Linear Interpolation Trajectory of Multi Parabolic Connection" width="100%" %}  
 
-Given path points $q_{k}$ , motion duration $t_{djk}$ between adjacent points, the motion duration $t_{k}$ between adjacent points and the acceleration $|\ddot{q} _{k}|$ of each projectile segment, then we can calculate the duration $t_{k}$ of parabolic segment, the time $t_{jk}$ of linear segment and the velocity $\dot{q} _{jk}$ of linear segment.  
+Given path points $q_{k}$ , motion duration $t_{d j k}$ between adjacent points, the motion duration $t_{k}$ between adjacent points and the acceleration $|\ddot{q}_{k}|$ of each projectile segment.  
+Then we can calculate the duration $t_{k}$ of parabolic segment, the time $t_{j k}$ of linear segment and the velocity $\dot{q}_{j k}$ of linear segment.  
 
 $$
 \left\{\begin{array}{l}
@@ -107,4 +108,5 @@ t_{(n-1) n}=t_{d(n-1) n}-t_{n}-\cfrac{1}{2} t_{n-1}
 \end{array}\right.
 $$
 
-With all the functions above together with the given $q_{i}$ and $|\ddot{q} _{i}|$ ($i=1,2,...,n$) and $t_{di(i+1)}$ ($i=1,2,...,n$), the $t_{i}$ and $\ddot{q} _{i}$ ($i=1,2,...,n$) along with $\dot{q} _{i(i+1)}$ and $t _{i(i+1)}$ ($i=1,2,...,n-1$) can be calculated.
+With all the functions above together with the given $q_{i}$ and $|\ddot{q}_{i}|$ ($i=1,2,...,n$) and $t_{di(i+1)}$ ($i=1,2,...,n$).  
+The $t_{i}$ and $\ddot{q}_{i}$ ($i=1,2,...,n$) along with $\dot{q}_{i (i+1)}$ and $t_{i(i+1)}$ ($i=1,2,...,n-1$) can be calculated.
