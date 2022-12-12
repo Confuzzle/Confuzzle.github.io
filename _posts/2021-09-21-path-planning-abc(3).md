@@ -27,7 +27,7 @@ $$
 q_{b}=q_{0}+\cfrac{1}{2}\ddot{q}t_{b}^{2}
 $$
 
-Simplify these two equations, and consider $t_{h}$ is the middle time of the segement, then we can get  
+Simplify these two equations, and consider $t_{h}$ is the middle time of the segement, then we can get:  
 
 $$
 \ddot{q}t_{b}^{2}-\ddot{q}t_{b}t_{f}+(q_{f}-q_{0})=0
@@ -46,11 +46,12 @@ $$
 $$
 
 When the equal sign in the above equation is true, the length of the linear segment part is reduced to zero.  
-As shown in the figure, the three adjacent path points are called $j$, $k$ and $l$, the duration of the parabolic line segment at the path point $k$ is $t_{k}$, the duration of the linear part between the points $j$ and $k$ is $t_{jk}$, the total duration of the line segment connecting $j$ and $k$ is $t_{djk}$, the velocity of the linear part is $\dot{q}_{jk}$, and the acceleration of the projectile line segment at the point $k$ is $\ddot{q}_{k}$.
+As shown in the figure, the three adjacent path points are called $j$, $k$ and $l$, the duration of the parabolic line segment at the path point $k$ is $t_{k}$, the duration of the linear part between the points $j$ and $k$ is $t_{jk}$, the total duration of the line segment connecting $j$ and $k$ is $t_{djk}$, the velocity of the linear part is $\dot{q} _{jk}$, and the acceleration of the projectile line segment at the point $k$ is $\ddot{q} _{k}$.  
 
-{% include figure.html image="\assets\pictures\path-planning-abc-para-curve-2.svg" caption="Linear Interpolation Trajectory of Multi Parabolic Connection" width="95%" %}
 
-Given path points $q_{k}$ , motion duration $t_{djk}$ between adjacent points, the motion duration $t_{k}$ between adjacent points and the acceleration $|\ddot{q}_{k}|$ of each projectile segment, then we can calculate the duration $t_{k}$ of parabolic segment, the time $t_{jk}$ of linear segment and the velocity $\dot{q}_{jk}$ of linear segment.
+{% include figure.html image="\assets\pictures\path-planning-abc-para-curve-2.svg" caption="Linear Interpolation Trajectory of Multi Parabolic Connection" width="95%" %}  
+
+Given path points $q_{k}$ , motion duration $t_{djk}$ between adjacent points, the motion duration $t_{k}$ between adjacent points and the acceleration $|\ddot{q} _{k}|$ of each projectile segment, then we can calculate the duration $t_{k}$ of parabolic segment, the time $t_{jk}$ of linear segment and the velocity $\dot{q} _{jk}$ of linear segment.  
 
 $$
 \left\{\begin{array}{l}
@@ -63,6 +64,7 @@ $$
 
 The above are the relevant quantities of each segment in the middle. Trajectories smoothed by parabola do not actually pass through the middle point, but they must pass through the beginning and end of the trajectory.  
 Since the speed is continuous:
+
 $$
 \cfrac{q_{2}-q_{1}}{t_{d 12}-\cfrac{1}{2} t_{1}}=\ddot{q}_{1} t_{1}
 $$
@@ -73,7 +75,7 @@ $$
 t_{1}=t_{d 12}-\sqrt{t_{d 12}^{2}-\frac{2\left(q_{2}-q_{1}\right)}{\ddot{q}_{1}}}
 $$
 
-And the other values are:
+And the other values are:  
 
 $$
 \left\{\begin{array}{l}
@@ -81,7 +83,7 @@ $$
 \dot{q}_{12}=\cfrac{q_{2}-q_{1}}{t_{d12}-\cfrac{1}{2} t_{1}} \\
 t_{12}=t_{d 12}-t_{1}-\cfrac{1}{2} t_{2}
 \end{array}\right.
-$$
+$$  
 
 Similarly, for the last segment we have:  
 
@@ -105,4 +107,4 @@ t_{(n-1) n}=t_{d(n-1) n}-t_{n}-\cfrac{1}{2} t_{n-1}
 \end{array}\right.
 $$
 
-With all the functions above together with the given $q_{i}$ and $|\ddot{q}_{i}|$ ($i=1,2,...,n$) and $t_{di(i+1)}$ ($i=1,2,...,n$), the $t_{i}$ and $\ddot{q}_{i}$ ($i=1,2,...,n$) along with $\dot{q}_{i(i+1)}$ and $t_{i(i+1)}$ ($i=1,2,...,n-1$) can be calculated.
+With all the functions above together with the given $q_{i}$ and $|\ddot{q} _{i}|$ ($i=1,2,...,n$) and $t_{di(i+1)}$ ($i=1,2,...,n$), the $t_{i}$ and $\ddot{q} _{i}$ ($i=1,2,...,n$) along with $\dot{q} _{i(i+1)}$ and $t _{i(i+1)}$ ($i=1,2,...,n-1$) can be calculated.
