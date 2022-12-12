@@ -1,9 +1,9 @@
 ---
-title: Trajectory Planning ABC (3) - Linear Interpolation 
+title: Trajectory Planning ABC (3) - Linear Interpolation with Parabolic Transition
 categories:
 - Trajectory planning
 excerpt: |
-  Another common trajectory generation method is linear function interpolation.   
+  Another common trajectory generation method is linear function interpolation with parabolic transition.   
 feature_text: |
   ## Simple trajectory planning
   Joint space planning and Cartesian space planning 
