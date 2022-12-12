@@ -51,8 +51,8 @@ As shown in the figure, the three adjacent path points are called $j$, $k$ and $
 
 {% include figure.html image="\assets\pictures\path-planning-abc-para-curve-2.svg" caption="Linear Interpolation Trajectory of Multi Parabolic Connection" width="100%" %}  
 
-Given path points $q_{k}$ , motion duration $t_{d j k}$ between adjacent points, the motion duration $t_{k}$ between adjacent points and the acceleration $|\ddot{q}_{k}|$ of each projectile segment.  
-Then we can calculate the duration $t_{k}$ of parabolic segment, the time $t_{j k}$ of linear segment and the velocity $\dot{q}_{j k}$ of linear segment.  
+Given path points $q _{k}$ , motion duration $t _{d j k}$ between adjacent points, the motion duration $t _{k}$ between adjacent points and the acceleration $|\ddot{q} _{k}|$ of each projectile segment.  
+Then we can calculate the duration $t _{k}$ of parabolic segment, the time $t _{j k}$ of linear segment and the velocity $\dot{q} _{j k}$ of linear segment.  
 
 $$
 \left\{\begin{array}{l}
@@ -108,5 +108,5 @@ t_{(n-1) n}=t_{d(n-1) n}-t_{n}-\cfrac{1}{2} t_{n-1}
 \end{array}\right.
 $$
 
-With all the functions above together with the given $q_{i}$ and $|\ddot{q}_{i}|$ ($i=1,2,...,n$) and $t_{di(i+1)}$ ($i=1,2,...,n$).  
-The $t_{i}$ and $\ddot{q}_{i}$ ($i=1,2,...,n$) along with $\dot{q}_{i (i+1)}$ and $t_{i(i+1)}$ ($i=1,2,...,n-1$) can be calculated.
+With all the functions above together with the given $q _{i}$ and $ | \ddot{q} _{i} | $ ($i=1,2,...,n$) and $t _{di(i+1)}$ ($i=1,2,...,n$), 
+the $t _{i}$ and $ \ddot{q} _{i} $ ($i=1,2,...,n$) along with $ \dot{q} _{i (i+1)} $ and $ t _{i (i+1)} $ ($i=1,2,...,n-1$) can be calculated.
