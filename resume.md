@@ -66,4 +66,4 @@ Electronic Information Engineering | Master | Electronics and Information Engine
 ----
 ### SKILLS & CERTIFICATIONS
 **Coding:** Familiar with C++, Java.  
-**Languages:** CET-6 (522), The Japanese-Language Proficiency Test N1(140).
+**Languages:** TOFEL 106(R30, L28, S23, W25), CET-6 (522), The Japanese-Language Proficiency Test N1(140).
